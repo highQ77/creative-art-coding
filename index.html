@@ -22,7 +22,8 @@
       <div style="border: 8px solid rgba(250, 200, 1,.5);"></div>
       <!-- <div style="border: 8px solid rgba(0,0,0,.5);"></div> -->
       <div style="background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); height:50px"></div>
-      <div style="background-color: rgba(0, 0, 0, .8); backdrop-filter: grayscale(1); padding: 120px 64px 50px 64px ;">
+      <div id="paddingContainer"
+        style="background-color: rgba(0, 0, 0, .8); backdrop-filter: grayscale(1); padding: 120px 64px 50px 64px ;">
         <div class="su-row">
           <h1 class="h1ff" style="color:rgb(255,255,255);"><b style="color:rgb(250, 200, 1);">C</b>REATIVE <b
               style="color:rgb(250, 200, 1);">A</b>RT <b style="color:rgb(250, 200, 1);">C</b>ODING</h1>
@@ -35,14 +36,14 @@
           </div>
           <div class="su-col-lg-12 su-col-md-12 su-col-sm-12 su-text-70">
             <span style="margin: 0 10px;" class="su-fs-12">你好我是
-              William77，下列畫作皆採用網頁程式 javascript 繪製而成</span>
+              William77，下列畫作皆採用網頁程式 javascript 繪製</span>
           </div>
           <div class="su-col-lg-12 su-col-md-12 su-col-sm-12 su-text-70">
             <span style="margin: 0 10px;" class="su-fs-12">
-              希望透過此系列主題發表能推起程式作畫的風潮，同時拋磚引玉</span>
+              希望透過此主題展示能推起程式作畫的風潮，同時拋磚引玉</span>
           </div>
           <div class="su-col-lg-12 su-col-md-12 su-col-sm-12 su-text-70">
-            <span style="margin: 0 10px; font-size: 12px;">歡迎合作邀約 展售/商品印刷包裝/食衣住行育樂 (暫時限台灣地區)</span>
+            <span style="margin: 0 10px; font-size: 12px;">歡迎合作邀約 展售/商品包裝/食衣住行育樂 (暫時限台灣地區)</span>
           </div>
           <div class="su-col-lg-12 su-col-md-12 su-col-sm-12 su-text-70">
             <span style="margin: 0 10px; font-size: 12px;">請寫信至 highqualityliang.77@gmail.com</span>
@@ -107,7 +108,7 @@
             var template = `
               <div class="su-row su-mb-32" style="border: 1px solid rgb(100, 100, 100)">
                 <div style=" border: 10px solid rgba(0,0,0,0); background-color: rgba(0, 0, 0, .5);">
-                  <img style="max-width: 300px; border-right: 5px solid rgb(36, 36, 36);" src="${item.imgSrc}" class="su-m-16"/>
+                  <img style="width:100%; max-width: 300px; border-right: 5px solid rgb(36, 36, 36);" src="${item.imgSrc}" class="su-m-16"/>
                   <div style="display: inline-block; color:rgb(215, 215, 201);" class="su-m-16">
                     <span style="color:rgb(250, 200, 1)">${(i + 1).toString().padStart(3, '0')}</span>${item.productInfo}
                     <div style="border-top: 0px solid gray; padding:1px; margin: 10px 0;"></div>
@@ -135,8 +136,24 @@
       .hv:hover {
         border-bottom: 2px solid rgba(250, 200, 1) !important;
       }
-    </style>
 
+      @media (max-width: 500px) {
+        #paddingContainer {
+          font-size: 1em;
+          padding: 10px !important;
+          text-align: center;
+        }
+
+        #paddingContainer img {
+          margin: 0 !important;
+        }
+
+        .h1ff {
+          font-size: 3em;
+        }
+
+      }
+    </style>
   </div>
 </body>
 
