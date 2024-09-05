@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>William77 x Products</title>
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/su-layout.css">
+  <link rel="stylesheet" href="/css/su-guideline.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+  <div
+    style="position: absolute; z-index: 2;width: 100%;background:url(./img/bg.png) rgb(34,34,34); background-attachment: fixed;">
+
+    <div style="background:url(./img/bg.png) rgb(34, 34, 34); background-size: cover; background-attachment: fixed;">
+      <div style="border: 8px solid rgba(250, 200, 1,.5);"></div>
+      <!-- <div style="border: 8px solid rgba(0,0,0,.5);"></div> -->
+      <div style="background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); height:50px"></div>
+      <div style="background-color: rgba(0, 0, 0, .8); backdrop-filter: grayscale(1); padding: 120px 64px 50px 64px ;">
+        <div class="su-row">
+          <h1 class="h1ff" style="color:rgb(255,255,255);"><b style="color:rgb(250, 200, 1);">C</b>REATIVE <b
+              style="color:rgb(250, 200, 1);">A</b>RT <b style="color:rgb(250, 200, 1);">C</b>ODING</h1>
+        </div>
+        <div class="su-row su-mb-64">
+
+          <div class="su-col-lg-6 su-col-md-6 su-col-sm-12 su-text-70">
+            <br>
+            <span style="margin: 0 10px;" class="su-fs-18">線上展示主題 - 悸動心靈的視覺饗宴</span>
+          </div>
+          <div class="su-col-lg-12 su-col-md-12 su-col-sm-12 su-text-70">
+            <span style="margin: 0 10px;" class="su-fs-12">你好我是
+              William77，下列畫作皆採用網頁程式 javascript 繪製而成，希望透過此系列主題發表能推起程式作畫的風潮，同時拋磚引玉</span>
+          </div>
+          <div class="su-col-lg-12 su-col-md-12 su-col-sm-12 su-text-70">
+            <span style="margin: 0 10px; font-size: 12px;">歡迎商業合作邀約 - 展售/商品印刷包裝/食衣住行育樂 (暫時限台灣地區)</span>
+          </div>
+          <div class="su-col-lg-12 su-col-md-12 su-col-sm-12 su-text-70">
+            <span style="margin: 0 10px; font-size: 12px;">請寫信至 highqualityliang.77@gmail.com</span>
+          </div>
+          <div class="su-col-lg-12 su-col-md-12 su-col-sm-12 su-text-70">
+            <br>
+            <span style="margin: 0 10px;"><b style="color:rgb(250, 200, 1);">▽</b> SCROLL <b
+                style="color:rgb(250, 200, 1);">▽</b></span>
+          </div>
+        </div>
+        <div class="su-row su-mb-64"></div>
+        <div id="container">
+
+        </div>
+        <script>
+          var productMap = [
+            // 纏繞的光圈系列
+            { imgSrc: `./img/纏繞的光圈系列/光與少女(僅展覽).png`, productInfo: ' 光與少女 - 60cm x 60cm' },
+            { imgSrc: `./img/纏繞的光圈系列/大紅大紫點石成金.png`, productInfo: ' 大紅大紫點石成金 - 60cm x 60cm' },
+            { imgSrc: `./img/纏繞的光圈系列/星夜漫漫.png`, productInfo: ' 星夜漫漫 - 60cm x 60cm' },
+            { imgSrc: `./img/纏繞的光圈系列/沈靜的海.png`, productInfo: ' 沈靜的海 - 60cm x 60cm' },
+            { imgSrc: `./img/纏繞的光圈系列/療癒之心.png`, productInfo: ' 療癒之心 - 60cm x 60cm' },
+            { imgSrc: `./img/纏繞的光圈系列/霓虹派對.png`, productInfo: ' 霓虹派對 - 60cm x 60cm' },
+            { imgSrc: `./img/纏繞的光圈系列/靜謐的花園.png`, productInfo: ' 靜謐的花園 - 60cm x 60cm' },
+            { imgSrc: `./img/纏繞的光圈系列/黃金時刻.png`, productInfo: ' 黃金時刻 - 60cm x 60cm' },
+            // 恣意的雙色調系列
+            { imgSrc: `./img/恣意的雙色調系列/恣意的雙色調系列A.png`, productInfo: ' 恣意的雙色調系列A - 60cm x 60cm' },
+            { imgSrc: `./img/恣意的雙色調系列/恣意的雙色調系列B.png`, productInfo: ' 恣意的雙色調系列B - 60cm x 60cm' },
+            { imgSrc: `./img/恣意的雙色調系列/恣意的雙色調系列C.png`, productInfo: ' 恣意的雙色調系列C - 60cm x 60cm' },
+            { imgSrc: `./img/恣意的雙色調系列/恣意的雙色調系列D.png`, productInfo: ' 恣意的雙色調系列D - 60cm x 60cm' },
+            { imgSrc: `./img/恣意的雙色調系列/恣意的雙色調系列E.png`, productInfo: ' 恣意的雙色調系列E - 60cm x 60cm' },
+            { imgSrc: `./img/恣意的雙色調系列/恣意的雙色調系列F.png`, productInfo: ' 恣意的雙色調系列F - 60cm x 60cm' },
+            { imgSrc: `./img/恣意的雙色調系列/恣意的雙色調系列G.png`, productInfo: ' 恣意的雙色調系列G - 60cm x 60cm' },
+            // N次元異想世界
+            { imgSrc: `./img/N次元異想世界/異想世界A.png`, productInfo: ' 異想世界A - 60cm x 60cm' },
+            { imgSrc: `./img/N次元異想世界/異想世界B.png`, productInfo: ' 異想世界B - 60cm x 60cm' },
+            { imgSrc: `./img/N次元異想世界/異想世界C.png`, productInfo: ' 異想世界C - 60cm x 60cm' },
+            { imgSrc: `./img/N次元異想世界/異想世界D.png`, productInfo: ' 異想世界D - 60cm x 60cm' },
+            { imgSrc: `./img/N次元異想世界/異想世界E.png`, productInfo: ' 異想世界E - 60cm x 60cm' },
+            { imgSrc: `./img/N次元異想世界/異想世界F.png`, productInfo: ' 異想世界F - 60cm x 60cm' },
+            { imgSrc: `./img/N次元異想世界/異想世界G.png`, productInfo: ' 異想世界G - 60cm x 60cm' },
+            // 綿密的畫
+            { imgSrc: `./img/綿密的畫/綿密的畫A.png`, productInfo: ' 綿密的畫A - 60cm x 60cm' },
+            { imgSrc: `./img/綿密的畫/綿密的畫B.png`, productInfo: ' 綿密的畫B - 60cm x 60cm' },
+            { imgSrc: `./img/綿密的畫/綿密的畫C.png`, productInfo: ' 綿密的畫C - 60cm x 60cm' },
+            { imgSrc: `./img/綿密的畫/綿密的畫D.png`, productInfo: ' 綿密的畫D - 60cm x 60cm' },
+            { imgSrc: `./img/綿密的畫/綿密的畫E.png`, productInfo: ' 綿密的畫E - 60cm x 60cm' },
+            { imgSrc: `./img/綿密的畫/綿密的畫F.png`, productInfo: ' 綿密的畫F - 60cm x 60cm' },
+            { imgSrc: `./img/綿密的畫/綿密的畫G.png`, productInfo: ' 綿密的畫G - 60cm x 60cm' },
+            // 金色系列
+            { imgSrc: `./img/金色系列/命運之章.png`, productInfo: ' 命運之章 - 60cm x 60cm' },
+            { imgSrc: `./img/金色系列/真理之眼.png`, productInfo: ' 真理之眼 - 60cm x 60cm' },
+            { imgSrc: `./img/金色系列/金碧輝煌.png`, productInfo: ' 金碧輝煌 - 60cm x 60cm' },
+            { imgSrc: `./img/金色系列/黃金之眼.png`, productInfo: ' 黃金之眼 - 60cm x 60cm' },
+            { imgSrc: `./img/金色系列/黃金之鏡.png`, productInfo: ' 黃金之鏡 - 60cm x 60cm' },
+            { imgSrc: `./img/金色系列/黃金匯集.png`, productInfo: ' 黃金匯集 - 60cm x 60cm' },
+            { imgSrc: `./img/金色系列/黃金斑斕.png`, productInfo: ' 黃金斑斕 - 60cm x 60cm' },
+          ];
+
+          for (let i = 0; i < productMap.length; i++) {
+            var item = productMap[i]
+            var template = `
+              <div class="su-row su-mb-32" style="border: 1px solid rgb(100, 100, 100)">
+                <div style=" border: 10px solid rgba(0,0,0,0); background-color: rgba(0, 0, 0, .5);">
+                  <img style="width: 250px; border-right: 5px solid rgb(36, 36, 36);" src="${item.imgSrc}" />
+                  <div style="display: inline-block; color:rgb(215, 215, 201);" class="su-ml-16">
+                  <span style="color:rgb(250, 200, 1)">${(i + 1).toString().padStart(3, '0')}</span>${item.productInfo}
+                    <div style="border-top: 0px solid gray; padding:1px; margin: 10px 0;"></div>
+                    <div class="hv" onclick="window.open(' ${item.imgSrc}')"
+                      style="font-size: 12px; border: 1px solid gray; display: inline-block; padding: 10px; cursor: pointer;">
+                      Click to View
+                    </div>
+                  </div>
+                </div>
+              </div>
+            `
+            const product = document.createElement('div')
+            product.innerHTML = template
+            document.getElementById('container').appendChild(product)
+          }
+        </script>
+
+      </div>
+    </div>
+
+    <div style="background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); height:50px"></div>
+    <div style="border: 8px solid rgba(250, 200, 1,.5);"></div>
+
+    <style>
+      .hv:hover {
+        border-bottom: 2px solid rgba(250, 200, 1) !important;
+      }
+    </style>
+
+  </div>
+</body>
+
+</html>
