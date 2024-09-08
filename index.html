@@ -147,7 +147,7 @@
             var template = `
               <div class="su-row su-mb-32" style="border: 1px solid rgb(100, 100, 100)">
                 <div style=" border: 10px solid rgba(0,0,0,0); background-color: rgba(0, 0, 0, .5);">
-                  <img style="width:100%; max-width: 300px; border-right: 5px solid rgb(36, 36, 36);" src="${item.imgSrc}" class="su-m-16"/>
+                  <img loading="lazy" style="width:100%; max-width: 300px; border-right: 5px solid rgb(36, 36, 36);" src="${item.imgSrc}" class="su-m-16"/>
                   <div style="display: inline-block; color:rgb(215, 215, 201);" class="su-m-16">
                     <span style="color:rgb(250, 200, 1)">${(i + 1).toString().padStart(3, '0')}</span>${item.productInfo}
                     <div style="border-top: 0px solid gray; padding:1px; margin: 10px 0;"></div>
