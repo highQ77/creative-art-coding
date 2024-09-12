@@ -244,7 +244,20 @@
             { imgSrc: `./img/叢生系列/叢生C.png`, productInfo: ' 叢生C - 60cm x 60cm' },
             { imgSrc: `./img/叢生系列/叢生D.png`, productInfo: ' 叢生D - 60cm x 60cm' },
             { imgSrc: `./img/叢生系列/叢生E.png`, productInfo: ' 叢生E - 60cm x 60cm' },
+            // 文字陣列
+            { imgSrc: `./img/文字陣列/文字陣列戴著珍珠耳環的少女.png`, productInfo: ' 文字陣列戴著珍珠耳環的少女 - 60cm x 60cm(印刷版更清楚)' },
+            { imgSrc: `./img/文字陣列/文字陣列梵谷自畫像.png`, productInfo: ' 文字陣列梵谷自畫像 - 60cm x 60cm(印刷版更清楚)' },
+            { imgSrc: `./img/文字陣列/文字陣列蒙娜麗莎的微笑.png`, productInfo: ' 文字陣列蒙娜麗莎的微笑 - 60cm x 60cm(印刷版更清楚)' },
+            // 古怪的織紋
+            { imgSrc: `./img/古怪的織紋/古怪的織紋A-戴著珍珠耳環的少女.png`, productInfo: ' 古怪的織紋A-戴著珍珠耳環的少女 - 60cm x 60cm' },
+            { imgSrc: `./img/古怪的織紋/古怪的織紋A-梵谷自畫像.png`, productInfo: ' 古怪的織紋A-梵谷自畫像 - 60cm x 60cm' },
+            { imgSrc: `./img/古怪的織紋/古怪的織紋A-蒙娜麗莎.png`, productInfo: ' 古怪的織紋A-蒙娜麗莎 - 60cm x 60cm' },
+            { imgSrc: `./img/古怪的織紋/古怪的織紋B-戴著珍珠耳環的少女.png`, productInfo: ' 古怪的織紋B-戴著珍珠耳環的少女 - 60cm x 60cm' },
+            { imgSrc: `./img/古怪的織紋/古怪的織紋B-梵谷自畫像.png`, productInfo: ' 古怪的織紋B-梵谷自畫像 - 60cm x 60cm' },
+            { imgSrc: `./img/古怪的織紋/古怪的織紋B-蒙娜麗莎.png`, productInfo: ' 古怪的織紋B-蒙娜麗莎 - 60cm x 60cm' },
           ];
+
+          productMap.reverse();
 
           for (let i = 0; i < productMap.length; i++) {
             var item = productMap[i]
@@ -253,7 +266,7 @@
                 <div style=" border: 10px solid rgba(0,0,0,0); background-color: rgba(0, 0, 0, .5);">
                   <img loading="lazy" width="300" height="300" style="width:100%; max-width: 300px; border-right: 5px solid rgb(36, 36, 36);" src="${item.imgSrc}" class="su-m-16"/>
                   <div style="display: inline-block; color:rgb(215, 215, 201);" class="su-m-16">
-                    <span style="color:rgb(250, 200, 1)">${(i + 1).toString().padStart(3, '0')}</span>${item.productInfo}
+                    <span style="color:rgb(250, 200, 1)">${(productMap.length - (i + 1)).toString().padStart(3, '0')}</span>${item.productInfo}
                     <div style="border-top: 0px solid gray; padding:1px; margin: 10px 0;"></div>
                     <div class="hv" onclick="window.open(' ${item.imgSrc}')"
                       style="font-size: 12px; border: 1px solid gray; display: inline-block; padding: 10px; cursor: pointer;">
